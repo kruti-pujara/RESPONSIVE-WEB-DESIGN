@@ -1,0 +1,108 @@
+Fill in the Blank with Placeholder Text
+Lorem ipsum text has been used as placeholder text by typesetters since the 16th century, and this tradition continues on the web
+
+Uncomment HTML
+Commenting is a way that you can leave comments for other developers within your code without affecting the resulting output that is displayed to the end user.
+Commenting is also a convenient way to make code inactive without having to delete it entirely.
+Comments in HTML start with <!-- and end with a -->
+
+Remember that in order to start a comment, you need to use <!-- and to end a comment, you need to use -->
+
+HTML5 introduces more descriptive HTML tags. These include main, header, footer, nav, video, article, section and others
+These tags give a descriptive structure to your HTML, make your HTML easier to read, and help with Search Engine Optimization (SEO) and accessibility. 
+The main HTML5 tag helps search engines and other developers find the main content of your page.
+
+Note that img elements are self-closing.
+All img elements must have an alt attribute. The text inside an alt attribute is used for screen readers to improve accessibility and is displayed if the image fails to load.
+              <img src="https://www.freecatphotoapp.com/your-image.jpg" alt="A business cat wearing a necktie.">
+              
+                                                                  *ANCHOR TAG THEORY*
+--> Link to External Pages with Anchor Elements
+You can use a (anchor) elements to link to content outside of your web page.
+a elements need a destination web address called an href attribute. They also need anchor text.
+            <a href="https://www.freecodecamp.org">this links to freecodecamp.org</a>
+
+--> Link to Internal Sections of a Page with Anchor Elements:
+To create an internal link, you assign a link's href attribute to a hash symbol # plus the value of the id attribute for the element that you want to internally link to,
+usually further down the page.You then need to add the same id attribute to the element you are linking to. An id is an attribute that uniquely describes an element.
+          <a href="#contacts-header">Contacts</a>
+          ...
+          <h2 id="contacts-header">Contacts</h2>
+
+--> Nest an Anchor Element within a Paragraph
+target is an anchor tag attribute that specifies where to open the link. The value _blank specifies to open the link in a new tab. 
+The href is an anchor tag attribute that contains the URL address of the link:
+          <p>
+             <a></a>
+          </p>
+--> putting "#" as value in href attritube will create the deadlink 
+i.e.: Sometimes you want to add a elements to your website before you know where they will link.
+This is also handy when you're changing the behavior of a link using JavaScript, which we'll learn about later
+
+                                                    *LIST IN HTML5*
+-->UNORDERED LIST 
+Bullets are by default unordered list type
+HTML has a special element for creating unordered lists, or bullet point style lists.
+Unordered lists start with an opening <ul> element, followed by any number of <li> elements. Finally, unordered lists close with a </ul>
+For example:
+           <ul>
+              <li>milk</li>
+              <li>cheese</li>
+           </ul>
+--> ORDERED LIST
+       <ol>
+          <li>milk</li>
+          <li>cheese</li>
+       </ol>
+       
+                                                                     *FORMS IN HTML*
+
+--> You can build web forms that actually submit data to a server using nothing more than pure HTML. 
+You can do this by specifying an action attribute on your form elemen
+         <form action="/url-where-you-want-to-submit-form-data">
+            <input>
+          </form>
+--> action atrii of form tag
+--> required atrri
+--> submi attri
+--> button tag
+-->input tag
+-->type attri
+--> form tag
+--> radio atribute : All related radio buttons should have the same name attribute to create a radio button group. 
+By creating a radio group, selecting any single radio button will automatically deselect the other buttons within the same group 
+ensuring only one answer is provided by the user.
+
+It is considered best practice to set a for attribute on the label element, with a value that matches the value of the id attribute of the input element. 
+This allows assistive technologies to create a linked relationship between the label and the related input element. For example:
+<input id="indoor" type="radio" name="indoor-outdoor">
+<label for="indoor">Indoor</label>
+We can also nest the input element within the label tags:
+
+<label for="indoor"> 
+  <input id="indoor" type="radio" name="indoor-outdoor">Indoor 
+</label>
+
+                  example:
+                    <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+                      <input type="text" placeholder="cat photo URL" required>
+                      <button type="submit">Submit</button>
+                      
+                      <label for="indoor">
+                      <input type="radio" id="indoor"name="indoor-outdoor">Indoor</label>
+                      <label for="outdoor">
+                      <input type="radio" id="outdoor" name="indoor-outdoor"> Outdoor</label>
+                    </form>
+                                                   *DIVISION TAG*
+--> div tag
+                            works as an group where elements are conected to eache other
+                            
+                                                             *DOCTYPE*
+At the top of your document, you need to tell the browser which version of HTML your page is using. HTML is an evolving language, and is updated regularly. 
+Most major browsers support the latest specification, which is HTML5. However,older web pages may use previous versions of the language.
+You tell the browser this information by adding the <!DOCTYPE ...> tag on the first line, where the ... part is the version of HTML.  
+For HTML5, you use <!DOCTYPE html>.
+
+You can add another level of organization in your HTML document within the html tags with the head and body elements.
+Any markup with information about your page would go into the head tag. Then any markup with the content of the page (what displays for a user) would go into the body tag.
+Metadata elements, such as link, meta, title, and style, typically go inside the head element.
