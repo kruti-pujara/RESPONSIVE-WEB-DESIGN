@@ -1,0 +1,24 @@
+                                                                    *changing the color of text*
+style can be of three types and its a best practice to end the inline style with a ; (semi colon).
+creating the style tag in head button for better views
+creating class for decorating the elements..
+
+Style Multiple Elements with a CSS Class
+Classes allow you to use the same CSS styles on multiple HTML elements. You can see this by applying your red-text class to the first p elemen
+
+Change the Font Size of an Element
+Font size is controlled by the font-size CSS property, like this:
+h1 {
+  font-size: 30px;
+}
+
+Import a Google FontPassed
+To import a Google Font, you can copy the font's URL from the Google Fonts library and then paste it in your HTML. For this challenge,
+we'll import the Lobster font. To do this, copy the following code snippet and paste it into the top of your code editor (before the opening style element):
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+font-family: FAMILY_NAME, GENERIC_NAME;    The GENERIC_NAME is optional, and is a fallback font in case the other specified font is not available.
+Family names are case-sensitive and need to be wrapped in quotes if there is a space in the name. For example, you need quotes to use the "Open Sans" font,
+but not to use the Lobster font.
+
+Size Your Images
+CSS has a property called width that controls an element's width. Just like with fonts, we'll use px (pixels) to specify the image's width.
