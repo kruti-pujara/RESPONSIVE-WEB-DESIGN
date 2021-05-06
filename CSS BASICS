@@ -22,3 +22,53 @@ but not to use the Lobster font.
 
 Size Your Images
 CSS has a property called width that controls an element's width. Just like with fonts, we'll use px (pixels) to specify the image's width.
+
+border-radius (giving the perent value will shape it round)
+border
+style
+color
+width
+font-family
+font-size
+backgrounf-color 
+
+we can also create the multiple classes for the same html element class="class1 lass2"
+
+One cool thing about id attributes is that, like classes, you can style them using CSS.
+
+However, an id is not reusable and should only be applied to one element. An id also has a higher specificity (importance) than a class so if both are applied to the same
+element and have conflicting styles, the styles of the id will be applied.
+
+Here's an example of how you can take your element with the id attribute of cat-photo-element and give it the background color of green. In your style element:
+#cat-photo-element {
+  background-color: green;
+}
+Note that inside your style element, you always reference classes by putting a . in front of their names. You always reference ids by putting a # in front of their names.
+ 
+Three important properties control the space that surrounds each HTML element: padding, border, and margin.
+An element's padding controls the amount of space between the element's content and its border.
+Here, we can see that the blue box and the red box are nested within the yellow box. Note that the red box has more padding than the blue box.
+When you increase the blue box's padding, it will increase the distance (padding) between the text and the border around it
+An element's margin controls the amount of space between an element's border and surrounding elements.
+If you set an element's margin to a negative value, the element will grow larger.
+
+cloackwise assignment top roight bottom left
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
