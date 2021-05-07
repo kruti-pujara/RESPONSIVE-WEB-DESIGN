@@ -54,6 +54,75 @@ If you set an element's margin to a negative value, the element will grow larger
 
 cloackwise assignment top roight bottom left
 
+the overriding concepts n css:
+1. class2 override the class 1 f its declared next to class one otherwise class1 will override
+2. id overrides the class no mateer where they are placed
+3. inline styles override evry class and ids mentioned.
+4.In many situations, you will use CSS libraries. These may accidentally override your own CSS. 
+So when you absolutely need to be sure that an element has specific CSS, you can use !important.
+Let's go all the way back to our pink-text class declaration. Remember that our pink-text class was overridden by subsequent class declarations,
+id declarations, and inline styles.
+Let's add the keyword !important to your pink-text element's color declaration to make 100% sure that your h1 element will be pink.
+An example of how to do this is:
+color: red !important;
+
+colors in css
+For example, orange is pure red, mixed with some green, and no blue. In hex code, this translates to being #FFA500.
+
+The digit 0 is the lowest number in hex code, and represents a complete absence of color.
+
+The digit F is the highest number in hex code, and represents the maximum possible brightness.
+
+For example, red's hex code #FF0000 can be shortened to #F00. This shortened form gives one digit for red, one digit for green, and one digit for blue.
+
+This reduces the total number of possible colors to around 4,000. But browsers will interpret #FF0000 and #F00 as exactly the same color.
+
+The RGB value for black looks like this:
+
+rgb(0, 0, 0)
+The RGB value for white looks like this:
+
+rgb(255, 255, 255)
+
+
+*Create a custom CSS Variable*
+To create a CSS variable, you just need to give it a name with two hyphens in front of it and assign it a value like this:
+// declaring a variable name
+--penguin-skin: gray;
+
+
+// to assign it to different style properties we 
+After you create your variable, you can assign its value to other CSS properties by referencing the name you gave it.
+background: var(--penguin-skin);
+This will change the background of whatever element you are targeting to gray because that is the value of the --penguin-skin variable. 
+Note that styles will not be applied unless the variable names are an exact match.
+
+//Attach a Fallback value to a CSS Variable
+
+When using your variable as a CSS property value, you can attach a fallback value that your browser will revert to if the given variable is invalid.
+
+Note: This fallback is not used to increase browser compatibility, and it will not work on IE browsers. Rather, 
+it is used so that the browser has a color to display if it cannot find your variable.
+
+Here's how you do it:
+
+background: var(--penguin-skin, black);
+This will set background to black if your variable wasn't set. Note that this can be useful for debugging.
+
+
+*Inherit CSS Variables*
+When you create a variable, it is available for you to use inside the selector in which you create it. It also is available in any of that selector's descendants.
+This happens because CSS variables are inherited, just like ordinary properties.
+
+To make use of inheritance, CSS variables are often defined in the :root element.
+
+:root is a pseudo-class selector that matches the root element of the document, usually the html element.
+By creating your variables in :root, they will be available globally and can be accessed from any other selector in the style sheet.
+
+
+When you create your variables in :root they will set the value of that variable for the whole page.
+You can then over-write these variables by setting them again within a specific element.
+
 
 
 
