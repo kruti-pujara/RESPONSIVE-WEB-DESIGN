@@ -1,0 +1,45 @@
+*Creating visual design using text-align property*
+Text is often a large part of web content. CSS has several options for how to align it with the text-align property.
+//to make font bold
+font-weight: bold;
+
+// to make the underline
+text-decoration: underline;
+
+// to make the text italic OR italicize
+font-style: italic;
+
+// to make the font a strikethrough
+text-decoration: line-through;
+
+hr adds the horizontal line. slef closing tag
+
+box shadow property:
+The box-shadow property applies one or more shadows to an element.
+
+The box-shadow property takes values for
+
+offset-x (how far to push the shadow horizontally from the element),
+offset-y (how far to push the shadow vertically from the element),
+blur-radius,
+spread-radius and
+color, in that order.
+The blur-radius and spread-radius values are optional.
+Multiple box-shadows can be created by using commas to separate properties of each box-shadow element.
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+The font-weight property sets how thick or thin characters are in a section of text.
+
+// line height
+CSS offers the line-height property to change the height of each line in a block of text. As the name suggests, 
+it changes the amount of vertical space that each line of text gets.
+
+                                                               ***Adjust the Hover State of an Anchor Tag
+This challenge will touch on the usage of pseudo-classes. A pseudo-class is a keyword that can be added to selectors, in order to select a specific state of the element.
+
+For example, the styling of an anchor tag can be changed for its hover state using the :hover pseudo-class selector. Here's the CSS to change the color of the anchor tag to red during its hover state:
+
+a:hover {
+  color: red;
+}
+The code editor has a CSS rule to style all a tags black. Add a rule so that when the user hovers over the a tag, the color is blue.
