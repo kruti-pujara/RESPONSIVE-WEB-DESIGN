@@ -3,3 +3,22 @@ and a section is for grouping thematically related content. They can be used wit
 When there's no relationship between groups of content, then use a div.
 <div> - groups content <section> - groups related content <article> - groups independent, self-contained content..
 
+<nav>
+<header>
+<footer>
+<article>
+<audio> : controls, <source src, type>
+<figure image <figcaption>>
+<datetime>
+<date>
+
+
+elements only visible to the screen reader
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
